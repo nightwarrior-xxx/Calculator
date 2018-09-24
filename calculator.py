@@ -21,4 +21,8 @@ b2=Button(root,padx=30,pady=15,bd=5,fg='black',font=('arial',30,'bold'),text='2'
 b3=Button(root,padx=30,pady=15,bd=5,fg='black',font=('arial',30,'bold'),text='3').grid(row=3,column=2)
 bminus=Button(root,padx=69,pady=15,bd=5,fg='black',font=('arial',30,'bold'),text='-',bg='purple').grid(row=3,column=3)
 #Row4
+b0=Button(root,padx=30,pady=15,bd=5,fg='black',font=('arial',30,'bold'),text='0').grid(row=4,column=0)
+bdot=Button(root,padx=35,pady=15,bd=5,fg='black',font=('arial',30,'bold'),text='.',bg='purple').grid(row=4,column=1)
+bdivison=Button(root,padx=35,pady=15,bd=5,fg='black',font=('arial',30,'bold'),text='/',bg='purple').grid(row=4,column=2)
+bmultiply=Button(root,padx=64,pady=15,bd=5,fg='black',font=('arial',30,'bold'),text='*',bg='purple').grid(row=4,column=3)
 root.mainloop()
