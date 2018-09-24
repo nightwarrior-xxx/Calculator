@@ -12,10 +12,9 @@ sudo apt-get install python-tk
 
 
 ## Clone the repo
-### Run the follwoing command
+### Run the following command
 ```
 git clone https://github.com/nightwarrior-xxx/Calculator.git
-
 ```
 ### Move to folder Calculator
 ```
