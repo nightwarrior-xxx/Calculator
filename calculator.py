@@ -1,9 +1,32 @@
 #! /usr/bin/python
 from Tkinter import *
+
+def button(number):
+    global operator
+    operator=operator + str(number)
+    text_input.set(operator)
+
+def clear():
+    global operator
+    operator=''
+    text_input.set(operator)
+    Display.insert(0,"Come Again!!")
+
+def equal():
+    global operator
+    result=float(eval(operator))
+    text_input.set(result)
+    operator=''
+
+
 root=Tk()
 root.title('Calculator')
-#Screen
-Display=Entry(root,font=('arial',30,'bold'),fg='white',bg='black',justify='right',bd=20)
+
+
+operator=''
+text_input=StringVar(value="Programming is Fun")
+#Display
+Display=Entry(root,font=('arial',30,'bold'),fg='white',bg='black',justify='right',bd=20,textvariable=text_input)
 Display.grid(columnspan=4)
 #Row1
 b7=Button(root,padx=30,pady=15,bd=5,fg='black',font=('arial',30,'bold'),text='7').grid(row=1,column=0)
