@@ -1,5 +1,10 @@
 #! /usr/bin/python
-from Tkinter import *
+try:
+    # for Python2
+    from Tkinter import *   ## notice capitalized T in Tkinter 
+except ImportError:
+    # for Python3
+    from tkinter import * 
 
 def b(numbers):
     global operator
